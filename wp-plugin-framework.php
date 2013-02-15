@@ -1,30 +1,25 @@
 <?php
-/*
- Plugin Name: WordPress Plugin Framework
- Description: This plugin is a skeleton framework for starting your plugin development process.
- Version: 1.0
- Author: Timothy Wood @codearachnid
- Author URI: http://codearachnid.com
- Text Domain: 'wp-plugin-framework'
- License: GPLv2 or later
 
-Copyright 2013 by Timothy Wood @codearachnid and the contributors
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
-*/
+/**
+ * Plugin Name: WordPress Plugin Framework
+ * Plugin URI:
+ * Description: This plugin is a skeleton framework for starting your plugin development process.
+ * Version: 1.0
+ * Author: Timothy Wood (@codearachnid)
+ * Author URI: http://www.codearachnid.com
+ * Author Email: tim@imaginesimplicity.com
+ * Text Domain: 'wp-plugin-framework' 
+ * License:
+ * 
+ *     Copyright 2011 Imagine Simplicity (tim@imaginesimplicity.com)
+ *     License: GNU General Public License v3.0
+ *     License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * 
+ * @package wp-plugin-framework
+ * @category Core
+ * @author codearachnid
+ * 
+ */
 
 if ( !defined( 'ABSPATH' ) )
 	die( '-1' );
