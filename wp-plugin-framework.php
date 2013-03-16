@@ -32,16 +32,16 @@ if ( ! class_exists( 'WPPluginFramework' ) ) {
 		public $dir;
 		public $path;
 		public $url;
+		public $plugin_data;
 
-		const PLUGIN_NAME = 'WordPress Plugin Framework';
-		const DOMAIN = 'wp-plugin-framework';
-		const FILTERPREFIX = 'wp_plugin_framework';
 		const MIN_WP_VERSION = '3.5';
 
 		function __construct() {
 
 			// register lazy autoloading
 			spl_autoload_register( 'self::lazy_loader' );
+
+			$this->plugin_data = get_plugin_data( __FILE__ );
 
 			$this->path = self::get_plugin_path();
 			$this->dir = trailingslashit( basename( $this->path ) );
@@ -79,7 +79,7 @@ if ( ! class_exists( 'WPPluginFramework' ) ) {
 		public static function fail_notices() {
 			printf( '<div class="error"><p>%s</p></div>', 
 				sprintf( __( '%1$s requires WordPress v%2$s or higher.', 'wp-plugin-framework' ), 
-					self::PLUGIN_NAME, 
+					$this->plugin_data['Name'], 
 					self::MIN_WP_VERSION 
 				));
 		}
